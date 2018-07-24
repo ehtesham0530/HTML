@@ -1,0 +1,25 @@
+.gallery{
+  float: left;
+}
+
+img{
+  width: 200px;
+  border: 1px solid black;
+}
+
+.card{
+  width: 200px;
+  height: 250px;
+  border: 2px solid black;
+}
+
+
+.card{
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+
+.card:hover{
+  box-shadow: 1px 1px 10px red, -1px -1px 10px red;;
+}
