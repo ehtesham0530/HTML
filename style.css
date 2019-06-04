@@ -1,25 +1,31 @@
-.gallery{
-  float: left;
+body {
+  display: flex;
+  justify-content: center;
 }
 
-img{
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
   width: 200px;
   border: 1px solid black;
 }
 
-.card{
+.card {
   width: 200px;
   height: 250px;
   border: 2px solid black;
 }
 
-
-.card{
+.card {
   float: left;
   margin: 10px;
   text-align: center;
 }
 
-.card:hover{
-  box-shadow: 1px 1px 10px red, -1px -1px 10px red;;
+.card:hover {
+  box-shadow: 1px 1px 10px red, -1px -1px 10px red;
 }
