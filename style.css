@@ -3,6 +3,17 @@ body {
   justify-content: center;
 }
 
+@keyframes magic {
+  0% {
+    box-shadow: 1px 1px 10px red, -1px -1px 10px red;
+  }
+  50% {
+    box-shadow: 1px 1px 10px blue, -1px -1px 10px blue;
+  }
+  100% {
+    box-shadow: 1px 1px 10px green, -1px -1px 10px green;
+  }
+}
 .gallery {
   display: flex;
   flex-direction: column;
@@ -35,4 +46,5 @@ img {
 
 .card:hover {
   box-shadow: 1px 1px 10px red, -1px -1px 10px red;
+  animation: magic 2s ease-in-out infinite alternate;
 }
