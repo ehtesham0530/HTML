@@ -3,6 +3,17 @@ body {
   justify-content: center;
 }
 
+@keyframes magic {
+  0% {
+    box-shadow: 1px 1px 10px red, -1px -1px 10px red;
+  }
+  50% {
+    box-shadow: 1px 1px 10px blue, -1px -1px 10px blue;
+  }
+  100% {
+    box-shadow: 1px 1px 10px green, -1px -1px 10px green;
+  }
+}
 .gallery {
   display: flex;
   flex-direction: column;
@@ -18,14 +29,22 @@ img {
   width: 200px;
   height: 250px;
   border: 2px solid black;
+  position: relative;
 }
 
 .card {
-  float: left;
   margin: 10px;
   text-align: center;
 }
 
+.card p {
+  position: absolute;
+  top: 0;
+  right: 36%;
+  color: wheat;
+}
+
 .card:hover {
   box-shadow: 1px 1px 10px red, -1px -1px 10px red;
+  animation: magic 2s ease-in-out infinite alternate;
 }
