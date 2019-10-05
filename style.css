@@ -18,12 +18,19 @@ img {
   width: 200px;
   height: 250px;
   border: 2px solid black;
+  position: relative;
 }
 
 .card {
-  float: left;
   margin: 10px;
   text-align: center;
+}
+
+.card p {
+  position: absolute;
+  top: 0;
+  right: 36%;
+  color: wheat;
 }
 
 .card:hover {
